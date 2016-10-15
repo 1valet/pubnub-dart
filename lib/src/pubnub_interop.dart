@@ -3,6 +3,11 @@ library pubnub;
 
 import 'package:js/js.dart';
 
+/// The "real" JavaScript PubNub interop class.
+///
+/// Because the "JS interop" forces us to declare inconvenient "option" classes
+/// this implementation has been hidden behind a more Dart-friendly facade.
+///
 @JS()
 class PubNub {
   external PubNub(PubNubOptions options);
